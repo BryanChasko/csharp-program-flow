@@ -9,11 +9,11 @@ namespace WiredBrainCoffeeSurveys.Reports
         // Aggregate ratings
         public static double ServiceScore { get; set; } = 8.0;
 
-        public static double CoffeeScore { get; set; } = 8.5;
+        public static double CoffeeScore { get; set; } = 5;
 
         public static double PriceScore { get; set; } = 6.0;
 
-        public static double FoodScore { get; set; } = 7.5;
+        public static double FoodScore { get; set; } = 6;
 
         public static double WouldRecommend { get; set; } = 6.5;
 
