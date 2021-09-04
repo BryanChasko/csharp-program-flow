@@ -42,6 +42,26 @@ namespace WiredBrainCoffeeSurveys.Reports
             {
                 tasks.Add("Reward participants with discount cofee coupon.");
             }
+             // SWITCH STATEMENT TO FIND USER FEEDBACK ON HOW TO IMPROVE
+             switch (Q1Results.AreaToImprove)
+            {
+                //break tells the program flow to exit out of the switch statement once matched case has been executed.
+                case "RewardsProgram":
+                    tasks.Add("Revisit the rewards deals.");
+                    break;
+
+                case "Cleanliness":
+                    tasks.Add("Contact the cleaning vendor.");
+                    break;
+
+                case "MobileApp":
+                    tasks.Add("Contact consulting firm about the app.");
+                    break;
+
+                default:
+                    tasks.Add("Investigate individual comments for ideas.");
+                    break;
+            }
         }
     }
 }
