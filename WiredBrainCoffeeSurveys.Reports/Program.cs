@@ -7,6 +7,11 @@ namespace WiredBrainCoffeeSurveys.Reports
     {
         static void Main(string[] args)
         {
+            GenerateTasksReport();
+        }
+
+        public static void GenerateTasksReport()
+        {
             var tasks = new List<string>();
             //CALCULATED VALUES
             // declaration statements to declare new variables followed by expression statements to assign values to the variables
@@ -21,7 +26,7 @@ namespace WiredBrainCoffeeSurveys.Reports
                 tasks.Add("Investigate coffee recipes and ingredients.");
             }
 
-             if (overallScore > 8.0)
+            if (overallScore > 8.0)
             {
                 tasks.Add("Work with leadership to reward staff");
             }
@@ -29,21 +34,21 @@ namespace WiredBrainCoffeeSurveys.Reports
             {
                 tasks.Add("Work with employees for improvement ideas.");
             }
-             if (responseRate < .33)
+            if (responseRate < .33)
             {
                 tasks.Add("Research options to improve response rate.");
             }
-             else if (responseRate > .33 && responseRate < .66)
+            else if (responseRate > .33 && responseRate < .66)
             {
                 tasks.Add("Reward participants with free cofee coupon.");
             }
-             //only possible left scenario would be if response rate is over .66
-             else
+            //only possible left scenario would be if response rate is over .66
+            else
             {
                 tasks.Add("Reward participants with discount cofee coupon.");
             }
-             // SWITCH STATEMENT TO FIND USER FEEDBACK ON HOW TO IMPROVE
-             switch (Q1Results.AreaToImprove)
+            // SWITCH STATEMENT TO FIND USER FEEDBACK ON HOW TO IMPROVE
+            switch (Q1Results.AreaToImprove)
             {
                 //break tells the program flow to exit out of the switch statement once matched case has been executed.
                 case "RewardsProgram":
